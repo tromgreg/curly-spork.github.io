@@ -8,67 +8,59 @@ body {
     background-color: #d9dcd6;
 }
 
-header {
-    display: flex;
-    justify-content: right;
-    margin-bottom: auto;
+.header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
-    background-size: auto;
     color: #ffffff;
 }
-header h1 {
-    font-size: 48px;
-    padding-right: 100px;
-}
-header h1 .seo {
-    color: #d9dcd6;
-}
-header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 16px;
-    text-align: justify;   
-}
-header nav ul {
-    list-style-type:none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-        background-color: #2a607c;
-    }
-header nav ul li{
-    float: left;
-}
-header nav ul li a {
+
+.header h1 {
     display: inline-block;
-    overflow: hidden;
-    color: white;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;      
-}
-a:link:hover{
-    background-color: coral;
-    cursor: crosshair;
+    font-size: 48px;
 }
 
-/* this is the image of the meeting man*/
+.header h1 .seo {
+    color: #d9dcd6;
+}
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover{
+    opacity: 40%;
+}
+
+p {
+    font-size: 16px;
+}
+
 #hero {
     height: 800px;
     width: 100%;
-    resize: horizontal;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
-    position: center;
+    background-position: center;
 }
-
-
-
-/* the three floating images. i would like to figure out how to scale the image according to the size of the window*/
 
 .float-left {
     float: left;
@@ -80,157 +72,123 @@ a:link:hover{
     margin-left: 25px;
 }
 
-/* This is the test next to the floating pictures*/
-p {
-    font-size:16px;
-    display: block;
-}
-
-
-
-section{
+.content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-#search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: fit-content;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    box-sizing: inherit;
-    background-color: #0072bb;
-    color: #ffffff;
-    overflow: auto;
-}
-.search-engine-optimization img {
-    max-height: 200px;
-    
-
-}
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-    vertical-align: auto;
-    
-}    
-
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: fit-content;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-    overflow: auto;
-}
-.online-reputation-management img {
-    max-height: 200px;
-}
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-    vertical-align: auto;
-}
-
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: fit-content;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-    overflow: auto;
-}
-.social-media-marketing img {
-    max-height: 200px;
-}
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-    vertical-align: auto;
-}
-
-
-
-/*aside section. trying to get it from falling down when adjusting window size*/
-
 .benefits {
     margin-right: 20px;
     padding: 20px;
-    clear: none;
+    clear: both;
     float: right;
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
-    background-position: right;
-    min-width: 10%;
-
-    
-    
 }
-
-.benefit-lead {
+.benefit {
     margin-bottom: 32px;
     color: #ffffff;
 }
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+.benefit h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
+.benefit img {
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+.search-engine-optimization {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
 }
 
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+.online-reputation-management {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
 }
 
+.social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
 
-/* I have changed the syntax*/
-footer {
+.search-engine-optimization img {
+    max-height: 200px;
+}
+
+.online-reputation-management img {
+    max-height: 200px;
+}
+
+.social-media-marketing img {
+    max-height: 200px;
+}
+
+.search-engine-optimization h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.online-reputation-management h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-footer h2 {
+.footer h2 {
     font-size: 20px;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+#skip-to-content {
+    padding: 1em;
+    position: absolute;
+    top: -40px;
+    left: 1em;
+    z-index: 1000;
+    color: white;
+}
+  
+#skip-to-content:focus {
+    position: absolute;
+    top: 0;
+    background: #222;
 }
